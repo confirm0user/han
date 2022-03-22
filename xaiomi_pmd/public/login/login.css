@@ -1,0 +1,213 @@
+.viewport-box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*  */
+.mui-up {
+	height: 53.5975vw;
+	background-image: url(/images/background.d3d7d2dd.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+}
+.mui-up-one {
+	height: 17.035vw;
+	padding: 0 7.4074vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mui-up-one>div.language {
+	color: rgba(0,0,0,50%);
+	cursor: pointer;
+	font-size: 3.5vw;
+	width: 20.3625vw;
+}
+.mui-up-one>div.language>i { vertical-align: middle;}
+.mui-up-one>.icon-box{display: flex;}
+.mui-up-one>.icon-box>a { 
+	width: 9.2575vw;
+	height: 9.2575vw;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+/* 选择预言的页面层 */
+.language-wrap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.language-header,.logon-header {
+	height: 22.0625vw;
+	padding: 0 7.40625vw;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.icon-wrap {
+	height: 14.8125vw;
+	display: flex;
+	align-items: center;
+}
+.icon-wrap>i { 	font-size: 6vw; font-weight: 500; color: rgba(0,0,0,0.80);}
+.language-header>h5 { font-size: 5.55555vw; }
+ul.language-list {
+	padding: 2.777775vw 0;
+	display: flex;
+	flex-direction: column;
+}
+ul.language-list>li {
+	padding: 4.444445vw 7.4074vw;
+	font-size: 4.629625vw;
+	
+}
+
+.mui-up-two {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.mui-up-two img { width: 12vw; }
+.mui-up-two p {
+	margin-top: 4.074075vw;
+	color: rgba(0,0,0,0.6);
+	font-size: 3.7037vw;
+	
+}
+/* mui-middle */
+.mui-middle {
+	height: 84.629vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 7.4074vw;
+}
+form.login,form.logon {
+	width: 100%;
+	/* width: 76.1875vw; */
+}
+form.login h1 {
+	font-size: 5.55555vw;
+	color: #000;
+	margin-bottom: 2.777775vw;}
+
+.form-item-group {
+	width: 100%;
+	margin-top: 2.777775vw;
+	display: flex;
+	flex-direction: column;
+}
+.form-item-group>span {
+	background-image: none;
+	padding-left: 10px;
+}
+input {
+	/* height: 100%; */
+	height: 14.8125vw;
+	width: 100%;
+	outline: none;
+	border: none;
+	background: none;
+	background-color: #F0F0F0;
+	border-radius: 4vw;
+	/* border-bottom: 1px solid #B0B0B0; */
+	text-indent: 1.5em;
+	font-size: 4.3vw;
+}
+
+button.btn-login, button.btn-logon{
+	outline: none;
+	border: none;
+	margin-top: 5.55555vw;
+	width: 100%;
+	height: 14vw;
+	border-radius: 7.5vw;
+	color: #fff;
+	font-size: 4vw;
+	background-color: #0B84FF;
+}
+button.btn-login.disabled, {	
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(11, 132, 255, 0.3);
+}
+.patrols {
+	margin-top: 5.55555vw;
+	color: rgba(0, 0, 0, 0.54);
+ }
+.patrols a { color: rgba(0, 0, 0, 0.54); }
+
+/* mui-down */
+.mui-down {
+	margin-top: 6.481475vw;
+	height: 34.9875vw;
+	/* flex-grow: 1; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mui-down>p {
+	height: 4.1665vw;
+	color: rgba(0,0,0,20%);
+	font-size: 3.14815vw;
+}
+.other {
+	display: flex;
+}
+.other>a {
+	width: 15.2695vw;
+	margin-top: 3.5vw;
+	display: flex;
+	justify-content: center;
+	/* height: 8.7925vw; */
+}
+.other>a>i {
+	font-size: 8.7925vw;
+}
+.other>a:nth-child(1)>i {color: #0B84FF;}
+.other>a:nth-child(2)>i {color: #BD2C00;font-size: 7.8vw;}
+.other>a:nth-child(3)>i {color: #0B84FF;}
+
+/* 注册 */
+.logon-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+.logon-header {
+	height: 14.75vw;
+}
+.logon-wrap>div:nth-child(2),.logon-wrap>div:nth-child(4), form.logon {
+	box-sizing: border-box;
+	padding: 0 7.5vw;
+}
+.logon-wrap>div:nth-child(2) {
+}
+.logon-wrap>div:nth-child(2) h3 {
+	margin: 1vw 0 2vw;
+	font-size: 5.55vw;
+}
+.logon-wrap>div:nth-child(2) a {
+	font-size: 3.7vw;
+	color: #0B84FF;
+}
+form.logon {
+	margin-top: 3vw;
+	height: 76vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+button.btn-logon {
+}
+

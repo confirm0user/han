@@ -1,0 +1,237 @@
+.mijia {}
+
+.cart-wrap { 
+	display: flex;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: relative;
+	background-color: #F4F4F4;
+}
+.cart-wrap.show {display: block;}
+/* cart-header 购物车空 */
+.cart-header {
+	color: #fff;
+	height: 22vw;
+	display: flex;
+	align-items: center;
+}
+.cart-header.head{
+	background-image: url(/images/bg_page_header.png);
+	background-size: 100% auto ;
+	background-repeat: no-repeat;
+	background-position: 0 55%
+}
+.head-wrap {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.head-wrap>img { width: 10.5vw;}
+.head-wrap>p {
+	font-weight: 600;
+	text-align: center;
+	font-size: 4.75vw;
+}
+.head-wrap>span {
+	width: 15.25vw;
+	text-align: center;
+}
+.cart-content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cart-none {
+	padding: 11.5vw 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: #666;
+	font-size: 3.75vw;
+}
+.cart-none>img { width: 25.75vw;}
+.cart-none>p {margin-top: 3.75vw;}
+.cart-none>a {
+	color: #666;
+	margin-top: 3.75vw;
+	background-color: #fff;
+	width: 27.25vw;
+	height: 10vw;
+	border-radius: 5vw;
+	border: 1px solid rgb(102, 102, 102);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cart-none>a span {}
+
+/* 购物车不为空 */
+.cart-pos {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	display: flex;
+	flex-direction: column;
+}
+.cart-header {  }
+.head-wrap>span>span.btn-edit {}
+.head-wrap>span>span.btn-ok {}
+.head-wrap>span>span.hidden {display: none;}
+.cart-content {}
+.cart-list-wrap {
+	background-color: #fff;
+	width: 94.75vw;
+	border-radius: 2vw;
+	font-size: 3.75vw;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+}
+.cart-title {
+	height: 11.75vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #333;
+	font-size: 3.75vw;
+	padding: 0.75vw 2.625vw 0;
+}
+.cart-title>p {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.cart-title>p>span:nth-child(2) { margin-left: 1.875vw;}
+.cart-title>span {
+	color: #666;
+	font-size: 3vw;
+}
+ul.cart-list {
+	display: flex;
+	flex-direction: column;
+	
+}
+li.cart-item {
+	margin-bottom: 2.625vw;
+	display: flex;
+	align-items: center;
+}
+/
+/* 复选框 */
+li.cart-item>p {}
+li.cart-item>p.hidden { display: none; }
+span.checkbox {
+	margin: 0 2.625vw;
+	display: block;
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	background-size: 100% 100%;
+	background-image: url(/images/icon_checkbox_uncheck.png);
+}
+span.checkbox.checked{
+	background-image: url(/images/icon_checkbox_check.png);
+}
+a.product {
+	flex-grow: 1;
+	display: flex;
+}
+a.product>.avatar { 
+	margin-right: 2.875vw;
+	border-radius: 1.125vw;
+	background-color: rgba(0, 0, 0, 0.03);
+}
+a.product>.avatar>img {
+	width: 22.875vw;
+	height: 22.875vw;
+}
+a.product>ul {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+a.product li.name { color: #333; }
+a.product li.price_count {
+	display: flex;
+	justify-content: space-between;
+}
+a.product li.price_count p:nth-child(1) {
+	color: #BF1111;
+	font-size: 3vw;
+}
+a.product li.price_count p:nth-child(1)>span {
+	font-size: 4vw;
+}
+a.product li.price_count p.count-wrap {
+	margin-right: 3vw;
+	display: flex;
+}
+
+a.product li.price_count p.count-wrap>button {
+	font-size: 5vw;
+	width: 5vw;
+	outline: none;
+	border: none;
+	background-color: #fff;
+}
+a.product li.price_count p.count-wrap>span.count {
+	width: 6.875vw;
+	line-height: 5.375vw;
+	color: rgb(51, 51, 51);
+	background-color: rgb(244, 244, 244);
+	text-align: center;
+}
+
+.footer { background-color: #fff; }
+.hidden { display: none; }
+.footer-l {
+	font-size: 3.5vw;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+.footer-l_1 {
+	color: #333333;
+	margin-left: 3.25vw;
+	display: flex;
+	align-items: center;
+}
+.footer-l_2 {
+	margin-right: 1.25vw;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.footer-l_2>p {
+	color: rgba(0, 0, 0, 0.9);
+}
+.footer-l_2>p>span {
+	color: rgb(191, 17, 17);
+	font-size: 4.25vw;
+}
+.footer-r {
+	width: 27.75vw;
+	display: flex;
+	align-items: center;
+}
+.foot-bill {
+	width: 25.625vw;
+	height: 10.125vw;
+	background: linear-gradient(to right, rgb(240, 78, 46), rgb(213, 16, 16));
+	border-radius: 4.8vw;
+	color: #fff;
+	font-size: 4vw;
+}
+.foot-bill>p {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

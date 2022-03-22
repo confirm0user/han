@@ -1,0 +1,74 @@
+* {padding: 0; margin: 0;}
+ul { list-style: none; }
+a { text-decoration: none; }
+.clearfix::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+button,input {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+/* input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset 
+	 背景色是什么，设置相同颜色，这里body的默认背景色是白色 
+} */
+
+
+
+/* 媒体查询 */
+.border-1px {
+	position: relative;
+}
+.border-1px:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	transform-origin: left top;
+	left: 0;
+	top: 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1) {
+	.border-1px:after {
+		width: 100%;
+		height: 100%;
+		transform: scale(1);
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.border-1px:after {
+		width: 200%;
+		height: 200%;
+		transform: scale(0.5);
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2.5) {
+	.border-1px:after {
+		width: 250%;
+		height: 250%;
+		transform: scale(0.4%);
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+	.border-1px:after {
+		width: 300%;
+		height: 300%;
+		transform: scale(0.333333%);
+	}
+}
+
+
+

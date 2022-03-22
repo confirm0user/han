@@ -1,0 +1,237 @@
+.mijia-addr {
+	width: 100%;
+	height: 100%;
+}
+.show { display: flex !important; }
+.address {
+	display: none;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+/* address-head */
+.addr-head {
+	height: 11.75vw;
+	display: flex;
+}
+.addr-head>div {
+	display: flex;
+	justify-content: center;
+}
+.addr-head>div:nth-child(1) {	width: 12vw; }
+.addr-head>div:nth-child(1) img {width: 10.375vw;} 
+.addr-head>div:nth-child(2) {
+	width: 77.5vw;
+	align-items: center;
+}
+
+/* address-content */
+.addr-content {
+	flex-grow: 1;
+	flex-basis: 0;
+	display: flex;
+	flex-direction: column;
+}
+/* 收货地址为空 */
+div.null {
+	display: none;
+	background-color: rgb(244, 244, 244);
+	flex-grow: 1;
+	flex-direction: column;
+	align-items: center;
+}
+div.null img { 	margin-top: 30%;width: 24vw; height: 24vw;}
+div.null span { padding-top: 3.5vw;color: #666; font-size: 3.25vw;}
+/* 有收获地址 */
+ul.addr-list {
+	display: none;
+	flex-grow: 1;
+	flex-direction: column;
+	overflow: auto;
+}
+li.addr-item {
+	box-sizing: border-box;
+	padding-left: 3.75vw;
+	height: 26.875vw;
+	border-bottom: 1px solid rgb(229, 229, 229) ;
+	display: flex;
+}
+li.addr-item>span {
+	width: 12%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+li.addr-item>span>img {width: 4.5vw;}
+.information {
+	margin-left: 2vw;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+p.information-one {
+	color: #333;
+	font-size: 4vw;
+	display: flex;
+	justify-content: space-between;
+}
+.information-two {
+	color: #666;
+	font-size: 3.5vw;
+	margin-top: 1.5vw;
+	height: 9.375vw;
+	display: flex;
+	/* justify-content: flex-start; */
+}
+.information-two>p {
+	align-self: flex-start;
+}
+/* 默认地址的按钮样式 */
+div.default {
+	margin-right: 1.5vw;
+	margin-top: 0.5vw;
+	align-self: flex-start;
+	width: 8.75vw;
+	border: 1px solid rgb(182, 9, 9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.default.hidden { display: none; }
+div.default>span { 
+	align-self: flex-start;
+	color: rgb(182, 9, 9);
+	font-size: 3.25vw;
+}
+/* 增加 */
+.add-wrap {
+	flex-shrink: 0;
+	box-sizing: border-box;
+	padding: 3.5vw 4vw;	
+	height: 18.25vw;
+	z-index: 9;
+	display: flex;
+}
+.add-wrap button {
+	width: 100%;
+	height: 11.25vw;
+	background-color: #fff;
+	border: 1px solid rgb(132, 95, 63);
+	border-radius: 1.3vw;
+}
+
+
+
+
+/* 编辑地址与新增地址的  弹窗 */
+.address-edit, .address-add {
+	display: none;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+.address-edit .addr-head, .address-add .addr-head {
+	background-color: rgb(244, 244, 244);
+}
+form.addr-detail, form.add-detail {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.form-item-group {
+	width: 96%;
+	height: 13.875vw;
+	/* box-sizing: border-box;
+	padding-left: 3.25vw;
+	padding-right: 5.375vw; */
+	border-bottom: 1px solid rgb(229, 229, 229) ;
+	color: #333;
+	font-size: 3.6vw;
+	display: flex;
+	align-items: center;
+}
+.form-item-group label {
+	width: 24%;
+	font-size: 3.55vw;
+}
+.form-item-group input {
+	flex-grow: 1;
+	height: 5vw;
+	color: rgba(0,0,0,.8);
+}
+.form-item-group input:-webkit-autofill {
+	-webkit-text-fill-color: rgba(0,159,255.0.8);
+}
+.set-up {
+	display: flex;
+	justify-content: space-between;
+}
+.set-up>div {
+	width: 10vw;
+	height: 5vw;
+	margin-right: 5vw;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.set-up>div>p {
+	height: 80%;
+	width: 100%;
+	z-index: 6;
+	background-color: rgb(222, 222, 223);
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;left: 0;
+	transform: translateY(-50%);
+}
+.set-up>div>span {
+	z-index: 7;
+	display: inline-block;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	background-color: rgb(255, 255, 255);
+}
+.set-up>div.change {transition: 0.2s;}
+.set-up>div.change>p {
+	background-color: rgb(180, 115, 31);
+	border-radius: 10px;
+}
+.set-up>div.change>span {
+	background-color: rgb(0, 150, 136);
+	position: absolute;
+	top: 0; right: 0;
+}
+.btn-remove {
+	color: #ED0D0D;
+	border: none;
+}
+
+/* 保存 */
+.save-edit, .save-add {
+	box-sizing: border-box;
+	height: 16vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.save-edit button, .save-add button {
+	width: 88%;
+	height: 10.625vw;
+	color: #fff;
+	font-size: 4vw;
+	font-weight: 600;
+	background: linear-gradient(to right, rgb(245, 90, 55), rgb(223, 46, 46));
+	border-radius: 12vw;
+	letter-spacing: 2vw;
+}
+
+/* edit */
+
+
+
+/* add */
+

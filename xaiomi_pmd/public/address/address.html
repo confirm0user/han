@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/reset.css">
+		<link rel="stylesheet" href="/assets/css/public.css">
+		<link rel="stylesheet" href="/assets/css/regions_picker_m.css">
+		<link rel="stylesheet" href="/plugins/layer/theme/default/layer.css">
+		<!-- <link rel="stylesheet" href="/plugins"> -->
+		<link rel="stylesheet" href="address.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="mijia-addr">
+			
+			<div class="address show">
+				<div class="addr-head">
+					<div><img src="icon_arrow_left_black.png" ></div>
+					<div><span>收货地址</span></div>
+				</div>
+				<!-- addr-content -->
+				<div class="addr-content">
+					<ul class="addr-list  show">
+						<!-- <li class="addr-item">
+							<div class="information">
+								<p class="information-one">
+									<span class="name">dd</span>
+									<span class="phone">1234567890</span>
+								</p>
+								<div class="information-two">
+									<div class="default"><span>默认</span></div>
+									<p>山东省济宁哈哈哈哈哈哈哈哈哈哈</p>
+								</div>
+							</div>
+							<span class="btn-modeify"><img src="icon_edit_gray.png" ></span>
+						</li> -->
+					</ul>
+					<div class="null ">
+						<img src="no_result_address.png" alt="">
+						<span>您还没有收货地址，请点击下方+新建</span>
+					</div>
+					<div class="add-wrap">
+						<button class="btn-add" type="button">+添加地址</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="address-edit">
+				<div class="addr-head">
+					<div><img src="icon_arrow_left_black.png" ></div>
+					<div><span>编辑地址</span></div>
+				</div>
+				<!-- addr-content -->
+				<div class="addr-content">
+					<form class="addr-detail" action="">
+						<input class="id" type="hidden" value="0" />
+						<div class="form-item-group">
+							<label for="">收货姓名</label>
+							<input name="receive-name" class="receive-name" type="text" placeholder="请输入收货人姓名">
+						</div>
+						<div class="form-item-group">
+							<label for="">手机号码</label>
+							<input name="receive-phone" class="receive-phone" type="text" placeholder="请输入收货人电话">
+						</div>
+						<div class="form-item-group">
+							<label for="">收货地区</label>
+							<input name="receive-region" class="receive-region regions-picker" type="text" placeholder="请选择省/市/区/街道">
+						</div>
+						<div class="form-item-group">
+							<label for="">详细地址</label>
+							<input name="receive-detail" class="receive-detail" type="text" placeholder="请输入街道地址">
+						</div>
+						
+						<div  style="background-color: #F6F6F6; height: 2vw;"></div>
+						
+						<div class="form-item-group set-up">
+							<span>设为默认地址</span>
+							<div class="">
+								<p></p>
+								<span></span>
+							</div>
+						</div>
+						<div class="form-item-group btn-remove">
+							<span>删除默认地址</span>
+						</div>
+					</form>
+					
+					<div class="save-edit">
+						<button class="btn-save" type="button">保存</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="address-add " >
+				<div class="addr-head">
+					<div><img src="icon_arrow_left_black.png" ></div>
+					<div><span>编辑地址</span></div>
+				</div>
+				<!-- addr-content -->
+				<div class="addr-content">
+					<form class="add-detail" action="">
+						<input class="id" type="hidden" value="0" />
+						<div class="form-item-group">
+							<label for="">收货姓名</label>
+							<input class="receive-name" type="text" placeholder="请输入收货人姓名">
+						</div>
+						<div class="form-item-group">
+							<label for="">手机号码</label>
+							<input class="receive-phone" type="tel" placeholder="请输入收货人电话">
+						</div>
+						<div class="form-item-group">
+							<label for="">收货地区</label>
+							<input class="receive-region regions-picker" type="text" placeholder="请选择省/市/区/街道">
+						</div>
+						<div class="form-item-group">
+							<label for="">详细地址</label>
+							<input class="receive-detail" type="text" placeholder="请输入街道地址" />
+						</div>
+						
+						<div  style="background-color: #F6F6F6; height: 2vw;"></div>
+						
+						<div class="form-item-group set-up">
+							<span>设为默认地址</span>
+							<div class="">
+								<p></p>
+								<span></span>
+							</div>
+						</div>
+					</form>
+					
+					<div class="save-add">
+						<button class="btn-save" type="button" >保存</button>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		<script src="/assets/js/jQuery-1.8.2.js"></script>
+		<script src="/assets/js/js-cookie.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="/assets/js/jquery.query.js"></script>
+		<script src="/assets/js/regions.js"></script>
+		<script src="/assets/js/regions_picker_m.js"></script>
+		<script src="address.js"></script>
+	</body>
+</html>

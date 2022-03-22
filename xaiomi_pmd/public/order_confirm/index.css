@@ -1,0 +1,295 @@
+.box {
+	flex-grow: 1;
+	display: flex;
+	overflow: auto;
+	background-color: rgb(244, 244, 244);
+}
+.box::-webkit-scrollbar { display: none;}
+.box-content {
+	width: 100%;
+	height: 100%;
+	background-image: url(/images/bg_page_header.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+}
+.confirm_head {
+	height: 23.5vw;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.confirm_head>p {
+	height: 23.5vw;
+	font-weight: 600;
+	text-align: center;
+	font-size: 5.5vw;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+.confirm_head>img {
+	position: absolute;
+	top: 50%; left: 0;
+	transform: translateY(-50%);
+	width: 11vw;
+}
+/*  */
+.box3 {
+	/* background-color: rgb(244, 244, 244); */
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 2.625vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.box3>div {
+	box-sizing: border-box;
+	padding: 0 2.625vw;
+	background-color: #fff;
+	border-radius: 2.4vw;
+}
+.confirm-addr {
+	height: 25.5vw;
+	color: #333;
+	box-sizing: border-box;
+	padding: 4.25vw 0 ;
+	margin-bottom: 2.5vw;
+	display: flex;
+	align-items: center;
+}
+.confirm-addr>div { flex-grow: 1;display: flex;flex-direction: column;}
+.confirm-addr span { font-weight: 600;	font-size: 4.25vw;}
+.confirm-addr p { margin-top: 2.125vw;font-size: 3.5vw; line-height: 5vw; }
+.confirm-addr img {width: 4.6vw; height: 4.6vw;}
+/*  */
+.confirm-store {
+	display: flex;
+	flex-direction: column;
+}
+.confirm-store h6 {
+	height: 11vw;
+	display: flex;
+	align-items: center;
+}
+.confirm-store h6 img { width: 6.375; height: 6.375vw;}
+.product {
+	box-sizing: border-box;
+	padding: 3vw 0;
+	display: flex;
+	flex-direction: column;
+}
+.product-item {
+	display: flex;
+}
+.avatar {
+	width: 22.875vw;
+	 height: 22.875vw;
+	background-color: rgba(0, 0, 0, 0.05); 
+	border-radius: 1vw;
+}
+.avatar img {width: 22.875vw; height: 22.875vw;}
+.pro-det {
+	flex-grow: 1;
+	margin-left: 2.625vw;
+	display: flex;
+	flex-direction: column;
+}
+.pro-det p.name { color: #333; font-size: 3.75vw;}
+.pro-det p.p-c {
+	margin-top: 2vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pro-det p.p-c {color: #BF1111;font-size: 3.25vw;}
+.pro-det p.p-c span.price { font-size: 4vw;}
+.pro-det p.p-c>span:nth-child(2) { width: 8vw;color: #333;font-size: 3.25vw;}
+.pro-det p.ensure {
+	height: 6.125vw;
+	color: #BF1111;
+	font-size: 3vw;
+	display: flex;
+	align-items: flex-end;
+}
+.pro-det p.ensure>span {
+	background-color: rgb(255, 244, 244);
+}
+.bill, .distribution, .message-board {
+	height: 11.25vw;
+	font-size: 3.75vw;
+	color: #333;
+	display: flex;
+	align-items: center;
+}
+.bill img {margin-left: 1vw;width: 3.5vw; height: 3.5vw;}
+.bill p, .distribution p {
+	margin-left: 3vw;
+	/* flex-grow: 1; */
+	width: 66vw;
+	display: flex;
+	justify-content: flex-end;
+}
+.message-board input {
+	margin-left: 2.5vw;
+	width: 69vw;
+}
+input:-webkit-autofill {
+	webkit-box-shadow: 0 0 0px 1000px blue inset
+}
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: -internal-light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+    color: -internal-light-dark(black, white) !important;
+}
+/*  */
+.confirm-other {
+	margin: 2.5vw 0;
+	box-sizing: border-box;
+	padding: 2.75vw;
+	display: flex;
+	flex-direction: column;
+}
+.confirm-other>div {
+	height: 11.25vw;
+	color: #333;
+	font-size: 3.75vw;
+	display: flex;
+	align-items: center;
+}
+.confirm-other>div:nth-child(-n+3) { box-sizing: border-box; padding-right: 5vw;}
+.confirm-other>div p { 
+	flex-grow: 1; 
+	text-align: right;
+}
+.confirm-other>div:nth-child(4) img {width: 3.5vw; height: 3.5vw;}
+
+
+/* 弹出层的样式 */
+.layui-layer.layui-layer-page {
+	border-top-left-radius: 4vw;
+	border-top-right-radius: 4vw;
+}
+.popuo {}
+.layer-foot {
+	height: 16.25vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.layer-foot p {
+	width: 81vw;
+	height: 10.125vw;
+	background: linear-gradient(to right, rgb(245, 90, 55), rgb(223, 46, 46));
+	border-radius: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.layer-foot span { color: #fff; font-size: 4vw;}
+.layer-content0 {
+	height: ;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+.layer-content0::-webkit-scrollbar {display: none;}
+.layer-cont {
+	display: flex;
+	flex-direction: column;
+}
+div.addr-item {
+	box-sizing: border-box;
+	padding: 2vw 4vw;
+	color: #333;
+	font-size: 3.5vw;
+	display: flex;
+	flex-direction: column;
+}
+div.addr-item>div {
+	margin-bottom: 1vw;
+	height: 6vw;
+	display: flex;
+	align-items: center;
+}
+div.addr-item>div span.name { font-weight: 600; margin-right: 2vw;}
+div.addr-item>p { margin-left: 8.375vw; margin-bottom: 3vw;box-sizing: border-box; padding: 2vw 0;}
+div.addr-item p.choose {
+	width: 8.375vw;  height: 6.5vw;
+	background-image: url(/images/address_unselected.png);
+	background-size: 6.375vw 6.375vw;;
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+div.addr-item p.choose.show { 
+	background-image: url(/images/address_selected.png); 
+}
+	
+/* 默认地址的按钮样式 */
+div.default {
+	margin-right: 1.5vw;
+	margin-top: 0.5vw;
+	align-self: flex-start;
+	width: 8.75vw;
+	border: 1px solid #B4731F;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.default.hidden { display: none; }
+div.default>span { 
+	align-self: flex-start;
+	color: #B4731F;
+	font-size: 3.25vw;
+}
+/* footer */
+.box2 {
+	box-sizing: border-box;
+	padding-left: 5vw;
+	background-color: #fff;
+	flex-shrink: 0;
+	height: 14.375vw;
+	display: flex;
+	align-items: center;
+} 
+.box2>div, .box2-left>p {
+	display: flex;
+	align-items: center;
+}
+.box2-left {height: 8.75vw;flex-grow: 1;}
+.box2-left>span {
+	color: #333;
+	font-size: 3.75vw;
+	font-weight: 600;
+}
+.box2-left>p {
+	color: #BF1111;
+	font-size: 4.25vw;
+	margin-right: 1vw;
+}
+.box2-left>p>span { font-size: 6vw;}
+.box2-right {}
+.box2-right>p {
+	width: 26.625vw;
+	height: 10.125vw;
+	margin-right: 2vw;
+	background: linear-gradient(to right, rgb(240, 78, 46), rgb(213, 16, 16));
+	border-radius: 4.8vw;
+	color: #fff;
+	font-size: 4vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
