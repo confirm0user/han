@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="../public/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../public/css/reset.css"/>
+		<title>order_confirm</title>
+	</head>
+	<body>
+		<!-- site-herder -->
+		<div class="tonglan site-header-wrapper">
+			<div class="w site-header">
+				<div>
+					<div class="header-logo">
+						<a href="index.html"><img src="img/logo-mi2.png" alt=""></a>
+					</div>
+					<div class="title-more">
+						<h2>确认订单</h2>
+					</div>
+					<div class="topbar-info">
+						<span class="user">
+							<a href="">用户名</a>
+							<div class="user-menu-wrapper">
+								
+							</div>
+						</span>
+						<span class="spe">|</span>
+						<span class="link"><a href="">我的订单</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 内容 -->
+		<div class="tonglan page-main">
+			<div class="w order_confirm-wrapper">
+				<div class="order_confirm">
+					<!-- 1 -->
+					<div class="detail-section address-detail">
+						<div class="address-header">
+							<span class="address-title">收货地址</span>
+						</div>
+						<div class="address-list">
+							<div class="address-box">
+								<div class="address-item">
+									<div class="btn-add">
+										<span>+</span>
+										<p>添加新地址</p>
+									</div>
+								</div>
+								
+							</div>
+							<!-- 对话框 -->
+							<div class="edit-dialog-wrapper">
+								<div class="edit-dialog">
+									<form name="addressEdit">
+										<input type="hidden" name="id" value="0"  />
+										<div class="dialog-header">
+											<h2>~ 地址编辑 ~</h2>
+										</div>
+										<div class="form-item-group">
+											<label for="">收货人姓名：</label>
+											<input type="text" name="receiveName" />
+										</div>
+										<div class="form-item-group">
+											<label for="">收货人电话：</label>
+											<input type="text" name="receivePhone" />
+										</div>
+										<div class="form-item-group">
+											<label for="">收货人地址：</label>
+											<select class="region-province"></select> - 
+											<select class="region-city"></select> - 
+											<select class="region-area"></select> - 
+											<select class="region-street"></select>
+										</div>
+										<div class="form-item-group">
+											<label for="">收货人详细地址：</label>
+											<input type="text" name="receiveDetail" />
+										</div>
+										<div class="dialog-footer">
+											<button type="button" class="btn-ok">确定</button>
+											<button type="button" class="btn-cancel">取消</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="detail-section">
+						<div class="detail-header">
+							商品及优惠券
+						</div>
+						<div class="goods-list">
+							<div class="goods-item">
+								<p class="item-img"><img src="img/4.jpg" alt="" width="30px"></p>
+								<p class="item-name"><a href="../detail/detail.html" target="_blank">小米无线充电宝 青春版 10000mAh 白色</a></p>
+								<p class="price-box">
+									<span class="goods-price">109 × 1</span>
+									<span class="goods-total">109元</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 3 -->
+					<div class="detail-section">
+						<div class="section-option">
+							<div class="options-desc options-header">
+								<div class="option-tilte">配送方式</div>
+							</div>
+							<div class="options-list">
+								<div class="option-item">包邮</div>
+							</div>
+						</div>
+						<div class="section-option">
+							<div class="options-desc options-header">
+								<div class="option-tilte">发票</div>
+							</div>
+							<div class="options-list">
+								<div class="option-item">电子发票</div>
+								<div class="option-item">个人</div>
+								<div class="option-item">商品明细</div>
+								<div class="option-item">修改></div>
+							</div>
+						</div>
+					</div>
+					<!-- 4 -->
+					<div class="detail-section count-detail">
+						<!-- 左 -->
+						<div class="section-discount">
+							<div class="discount-coupon">
+								<a class="coupon-title">使用优惠券</a>
+								<div class="edit-dialog-wrapper">
+								</div>
+							</div>
+							<div class="position-box">
+								<a>使用小米礼品卡</a>
+								<div class="edit-dialog-wrapper">
+								</div>
+							</div>
+						</div>
+						<!-- 右 -->
+						<div class="section-bill">
+							<div class="bill-item">
+								<p class="bill-name">商品件数:</p>
+								<p class="bill-money">1件</p>
+							</div>
+							<div class="bill-item">
+								<p class="bill-name">商品总价:</p>
+								<p class="bill-money">109元</p>
+							</div>
+							<div class="bill-item">
+								<p class="bill-name">活动优惠:</p>
+								<p class="bill-money">-0元</p>
+							</div>
+							<div class="bill-item">
+								<p class="bill-name">优惠券抵扣:</p>
+								<p class="bill-money">-0元</p>
+							</div>
+							<div class="bill-item">
+								<p class="bill-name">运费:</p>
+								<p class="bill-money">-0元</p>
+							</div>
+							<div class="bill-item" style="padding-top: 5px;">
+								<p class="bill-name">应付总额:</p>
+								<p class="bill-money"><span>109</span>元</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 5 -->
+					<div class="detail-section footer-detail clearfix">
+						<div class="footer-address">
+							<p class="address-name">dsfdfsf</p>
+							<p class="address-desc">dfds</p>
+						</div>
+						<div class="handle-action">
+							<div class="operating-button">
+								<input class="btn-return" type="button" value="返回购物车">
+								<input class="btn-primary" type="button" value="去结算">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<iframe src="../footer/index.html" width="100%" height="620px" frameborder="0"></iframe>
+		
+		<script src="../public/js/regions.js" type="text/javascript"></script>
+		<script src="../public/js/regions_picker.js" type="text/javascript"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

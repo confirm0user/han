@@ -1,0 +1,7 @@
+git status来查看你当前的状态
+
+git add把项目添加到仓库  或  git add .把该目录下的所有文件添加到仓库，注意点是用空格隔开的
+
+git commit -m "注释"  把项目提交到仓库
+
+git push origin master 从本地库上传内容

@@ -1,0 +1,245 @@
+.mi-layout {
+	width: 100%;
+	height: 100%;
+}
+/* 图片 */
+.mi-layout-sider {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.img {
+	width: 400px;
+	height: 100%;
+}
+.img img {
+	width: 100%;
+	height: 100%;
+}
+
+/* 内容 */
+.mi-layout-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-left: 400px;
+}
+.mi-layout-scroll {
+	overflow: auto auto;
+	height: 100%;
+	position: relative;
+}
+/* header */
+.mi-layout__header {
+	box-sizing: border-box;
+	padding: 20px;
+	position: relative;
+}
+.mi-layout__title {display: inline-block;}
+.mi-layout__title img {width: 40px;vertical-align: middle;}
+.mi-layout__title h4 {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 30px;
+	margin-left: 8px;
+}
+.mi-nav {
+	display: inline-block;
+	float: right;
+}
+.mi-nav>a {
+	display: inline-block;
+	height: 40px;
+	font-size: 18px;
+	color: #838383;
+	margin: 0 10px;
+	line-height: 40px;
+}
+.mi-nav>a:hover {color: #FF6700;}
+.mi-nav>a:nth-child(3)::after {
+	content: "";
+	display: inline-block;
+	height: 20px;
+	border-right: 1px solid rgba(0,0,0,0.2);
+	vertical-align: middle;
+	margin-left: 25px;
+}
+.mi-nav .mi-nav__item{
+	display: inline-block;
+	font-size: 18px;
+	color: #838383;
+	height: 40px;
+	margin: 0 15px;
+}
+
+
+
+/* mi-layout__container */
+.mi-layout__container {padding-top: 20px ;}
+.ant-tabs-wrapper {
+	position: relative;
+	margin: auto auto;
+	width: 450px;
+	height: 550px;
+	box-sizing: border-box;
+	padding: 40px 50px;
+	margin-bottom: 80px;
+	box-shadow: 0 0 12px -8px;
+}
+.ant-tabs-nav {
+	height: 40px;
+	width: 150px;
+}
+.ant-tabs-nav span{
+	font-size: 22px;
+	color: #BBB;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.ant-tabs-nav span.active {
+	color: #333;
+	/* border-bottom: 4px solid #FF6700; */
+	transition: all 0.5s;
+}
+.ant-tabs-content {
+	position: relative;
+	width: 100%;
+	height: 430px;
+	overflow: hidden;
+}
+.ant-tabs {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transition: all 0.5;
+	/* 命令盒子内部的“行级元素 ” 不允许换行*/
+	white-space: nowrap;
+	font-size: 0;
+}
+
+input,button,select {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	font-size: 17px;
+	
+}
+select,option {
+	background-color: #F9f9f9;
+	box-sizing: border-box;
+	padding-left: 8px;
+	margin-top: 20px;
+}
+input {
+	margin-top: 20px;
+	background-color: #F9f9f9;
+	box-sizing: border-box;
+	padding-left: 8px;
+}
+button {
+	margin: 20px 0 10px;
+	background: #FF5C00;
+	color: #fff;
+	font-size: 18px;
+}
+/* 登录 */
+.ant-tabs-login {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	vertical-align: top;
+	/* background-color: pink; */
+}
+.ant-tabs-login button:hover {background-color: #ff7e29;}
+
+/* 注册 */
+.ant-tabs-logon {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	/* background-color: aquamarine; */
+}
+
+
+.ant-tabs-logon>div:nth-child(4) {font-size: 17px;}
+.ant-tabs-logon>div:nth-child(4) a {color: #FF5C00;z}
+.msg {
+	font-size: 14px;
+	color: #AAAAAA;
+	padding-bottom: 10px;
+}
+.msg input.check {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	vertical-align: middle;
+}
+.msg>span {vertical-align: middle;}
+.msg>span a {
+	display: inline-block;
+	color: #333333;
+	margin: 0 3px;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+/* 共有 */
+.mi-form-action {height: 30px;}
+.mi-form-action p:nth-child(1) {
+	float: left;}
+.mi-form-action p:nth-child(2) {
+	float: right;}
+.mi-form-action a {
+	font-size: 17px;
+	color: #FF5C00;
+	cursor: pointer;
+}
+.mi-sns-login {}
+.mi-sns-login>div {
+	text-align: center;
+	font-size: 17px;
+	font-weight: 400;
+	color: #aaa;
+	line-height: 40px;
+}
+ul.mi-sns-login_list {
+	font-size: 0;
+	text-align: center;
+}
+ul.mi-sns-login_list>li {
+	display: inline-block;
+	margin: 0 6px;
+}
+ul.mi-sns-login_list>li>a {cursor: pointer;}
+
+
+
+
+
+/* mi-copyright */
+.mi-copyright {
+	padding: 20px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #999;
+	font-size: 12px;
+/* 	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px; */
+}
+.mi-copyright a {
+	color: #999;
+	font-size: 12px;
+}
+
